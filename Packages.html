@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Packages Offered</title>
+<style>
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+.navigationbar {
+  height: 80px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.navigationbar a {
+  text-decoration: none;
+  color: aliceblue;
+  text-align: center;
+  padding: 16px;
+  padding-top: 30px;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+.logo {
+  width: 88px;
+  height: 80px;
+  margin-right: auto;
+}
+@media (max-width: 986px) {
+  .navigationbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    align-items: left;
+  }
+  .navigationbar a {
+    padding: 10px;
+    display: block;
+    text-align: right;
+    margin-left: 0;
+  }
+  .logo {
+    width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 477px) {
+  .navigationbar a {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+.Heading {
+  background-color: white;
+  color: #004B19;
+  padding: 15px;
+  text-align: center;
+  border-bottom: #21AF3C 2px solid;
+  font-size: 22px;
+}
+
+.Packages {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+  padding: 40px;
+  border-radius: 8px;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+  overflow: hidden;
+  height: 250px;
+	margin-right: 15%;
+	margin-left: 15%;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	margin-bottom: 40px;
+}
+
+.Packages:hover {
+  transform: scale(1.05); /* Adds the pop-up effect */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+.Packages h2 {
+  margin-bottom: 10px;
+}
+.Packages p {
+  font-size: 16px;
+}
+.Packages::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+.Packages > * {
+  position: relative;
+  z-index: 2;
+}
+.Packages.five-rounds {
+  background-image: url("Five-rounds.webp");
+}
+.Packages.triple-tee {
+  background-image: url("Triple-tee.jpg");
+}
+.Packages.getaway-break {
+  background-image: url("Getaway Break.jpg");
+}
+	.footer {
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+	border-top: #FFFFFF 1px solid;
+}
+</style>
+</head>
+
+<body>
+  <div class="navigationbar">
+	  <img class="logo" src="Logo-golfresort.png" alt="logo">
+
+	<a href="index.html">HOME</a>
+
+	<a href="Packages.html">PACKAGES&nbsp;</a>
+	<a href="Facilities.html">FACILITIES</a>
+	<a href="Contact-us.html">CONTACT US</a>
+	<a href="aaboutus.html">ABOUT US</a>
+  </div>
+
+<div class="Heading">
+    <h1>Packages Offered</h1>
+  </div>
+
+<div class="Packages five-rounds">
+    <h2>Five Rounds</h2>
+    <p>- Five-night full board stay in a luxury suite</p>
+    <p>- Five 18-hole rounds</p>
+    <p>- One guaranteed round on the famous Sea View course</p>
+    <p>- Complimentary digital coaching session</p>
+  </div>
+
+<div class="Packages triple-tee">
+    <h2>Triple Tee</h2>
+    <p>- Two-night stay in a double room with breakfast</p>
+    <p>- Three 18-hole rounds including one on the Sea View course (if available)</p>
+    <p>- Complimentary buggy hire</p>
+    <p>- 20% discount for the pro shop</p>
+  </div>
+
+<div class="Packages getaway-break">
+    <h2>Getaway Break</h2>
+    <p>- Overnight stay with full breakfast</p>
+    <p>- Dinner in any of the resort’s restaurants</p>
+    <p>- Access to courses (charges apply, excludes the Sea View course)</p>
+    <p>- Complimentary club hire</p>
+  </div>
+	<div class="footer">
+    <p>&copy; 2024 Golf Club. All rights reserved.</p>
+</div>
+</body>
+</html>

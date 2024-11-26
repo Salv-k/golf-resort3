@@ -1,0 +1,424 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Golf resort</title>
+
+	
+<style>
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+.navigationbar {
+	height: 80px;
+	background-color: black;
+	display: flex; 
+	align-items: center;
+	justify-content: flex-start; 
+}
+.navigationbar a {
+	text-decoration: none;
+	color: aliceblue;
+	text-align: center;
+	padding: 16px;
+	padding-top: 30px;
+	margin-left: 10px; 
+	white-space: nowrap; 
+}
+.logo {
+	width: 88px;
+	height: 80px;
+	margin-right: auto; 
+}
+	@media (max-width : 753px ){
+.navigationbar {
+	flex-direction: column;
+	height: auto; 
+	padding: 10px;
+	align-items: left; 
+}
+.navigationbar a {
+	padding: 10px; 
+	display: block; 
+	text-align: right;
+	margin-left: 0; 
+}
+
+.logo {
+	width: 70px; 
+	height: auto;
+	margin-bottom: 10px; 
+}
+}
+
+	@media (max-width: 480px) {
+.navigationbar a {
+	font-size: 14px;
+	padding: 8px; 
+}
+}
+	
+	
+	
+.picture {
+	background-color: gray; 
+	height:450px;
+}
+	
+.heading0 {
+	height: 150px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: white;
+	color: gray;
+	border-bottom: 1px gray solid;
+}
+.heading2 {
+	background-color: white;
+	color:#66DA58;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 125px;
+	font-size: 22px;
+	border-bottom: solid #5FF578 1px;
+}
+.heading0 h1 {
+    font-size: 36px;
+}
+
+.heading2 h1 {
+    font-size: 36px;
+}
+
+@media (max-width : 839px ){
+    .heading0 h1 {
+        font-size: 28px;
+    }
+
+    .heading2 h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading0 h1 {
+        font-size: 22px;
+    }
+
+    .heading2 h1 {
+        font-size: 20px;
+    }
+}
+	
+	   
+.white-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px; 
+		
+
+    }
+	
+ .inner-box {
+   width: 30%;
+   height: 300px;
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 10px;
+   padding: 10px;
+   border: 1px solid #ddd;
+   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+	
+
+.box-image {
+   width: 35%;
+   height: auto;
+}
+
+.box-heading {
+	
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+.box-text {
+ 
+    text-align: center;
+    margin-top: auto;
+}
+.inner-box:hover {
+    background-color: #2BD94C;
+    color: white;
+}
+
+	.full-image {
+		height: 600px;
+		background-color: #BABABA;
+		width:100%;
+	}
+
+.full-image-container {
+    overflow: hidden;
+    height: 600px;
+    width: 100%;
+	position: relative;
+}
+
+.full-image {
+    width: 100%; 
+    transition: transform 0.3s ease;
+}
+
+.full-image:hover {
+    transform: scale(1.1);
+}
+
+.overlay-text {
+    position: absolute; 
+    top: 25%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px; 
+    text-align: center;
+    font-weight: bold;
+}
+
+.sections {
+    display: flex; 
+	flex-direction: row;
+    height: 600px; 
+    width: 100%; 
+}
+
+.image-half {
+    flex: 1; 
+    position: relative;
+}
+
+.text-half {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; /
+    align-items: center; 
+    padding: 20px; 
+    background-color: white;
+	color: gray;
+}
+@media (max-width : 839px ){
+    .sections {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    .image-half, .text-half {
+        width: 100%; 
+    }
+
+    .image-half img {
+        width: 100%; 
+        height: auto;
+    }
+}
+.image00 {
+    width: 100%; 
+    height: 100%; 
+   
+}
+.contact-footer {
+    display: flex; 
+    height: 400px;
+    width: 100%; 
+    background-color: black;
+	color: white;
+    padding: 20px; 
+}
+
+.contact-text {
+    flex: 1; 
+    padding: 20px; 
+}
+
+.contact-form {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+    padding: 20px; 
+}
+
+.contact-form label {
+    margin-top: 10px; 
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%; 
+    padding: 10px;
+    margin-top: 5px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+}
+
+.contact-form button {
+    margin-top: 10px; 
+    padding: 10px 15px; 
+    background-color: #66DA58; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+
+}
+
+.contact-form button:hover {
+    background-color: #5BBF50; 
+}
+.footer {
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+	border-top: #FFFFFF 1px solid;
+}
+
+</style>
+</head>
+
+<body>
+<div class="navigationbar">
+	  <img class="logo" src="Logo-golfresort.png" alt="logo">
+	
+		<a href="index.html">HOME</a>
+
+	<a href="Packages.html">PACKAGES&nbsp;</a>
+	<a href="Facilities.html">FACILITIES</a>
+	<a href="Contact-us.html">CONTACT US</a>
+	<a href="aaboutus.html">ABOUT US</a>
+		
+	
+
+</div>	
+<div class="picture">
+	<img class="picture" src="2-doha-golf-club-2022.jpg" alt="golf resort" width="100%">
+	</div>	
+<div class="heading0">
+	<h1> OPENED DECEMBER 2015  ■  EXPERIENCE TROON GOLF</h1>
+</div>
+<div class="heading2">
+  <h1>Al Zorah Golf Club</h1>
+	</div>
+<div class="white-box">
+	
+    <div class="inner-box">
+	<img src="../Pictures/yes.png" alt="location" class="box-image">
+    <h3 class="box-heading">Location</h3>
+	<p class="box-text">As one of the best golf courses in the Middle East, this experience will undoubtedly exceed your expectations</p>
+  </div>
+	
+    <div class="inner-box">
+	<img src="calender.png" alt="book" class="box-image">
+    <h3 class="box-heading">PACKAGES</h3>
+	<p class="box-text">&nbsp;</p>
+  </div>
+	
+    <div class="inner-box">
+	<img src="building.png" alt="stay" class="box-image">
+    <h3 class="box-heading">&nbsp;</h3>
+	<p class="box-text">&nbsp;</p>
+	</div>
+	
+    <div class="inner-box">
+	<img src="camera.png" alt="camera" class="box-image">
+    <h3 class="box-heading">ABOUT US</h3>
+	<p class="box-text">&nbsp;</p>
+	</div>
+	
+    <div class="inner-box">
+	<img src="DINE.png" alt="cofee" class="box-image">
+    <h3 class="box-heading">PACKAGES</h3>
+	<p class="box-text">&nbsp;</p>
+	</div>
+    <div class="inner-box">
+	<img src="Members.png" alt="Image description" class="box-image">
+    <h3 class="box-heading">Membership</h3>
+	<p class="box-text">&nbsp;</p>
+	</div>
+</div>
+	
+	
+	
+	
+	
+<div class="full-image-container">
+  <img src="AlZorahGolfClubImage111_resized.jpg" alt="golf club" class="full-image">
+	<div class="overlay-text"><em>A T</em><em>ruly Unique Layout Spectacularly Changed the Golfing Landscape in the <strong>UAE</strong>.</em></div>
+</div>
+
+	
+<div class="sections">
+    <div class="image-half">
+        <img src="half-half.jpg" alt="golf-landscape" class="image00">
+    </div>
+    <div class="text-half">
+        <h2><em>Meet the stunning Al Zorah Golf Club, managed by Troon Golf and located in Ajman, just <strong>25 minutes from Dubai International Airport.</strong></em></h2>
+<p>A world-class course set amidst a beautiful naturally-preserved environment of striking mangroves and sheer tranquility – that’s the special proposition that’s been magically created by the famed Nicklaus Design group and which awaits golfers making the short trip from Dubai and other U.A.E. regions to play Ajman’s first ever golf course. The spectacular par-72 Al Zorah Golf Club offers a truly sensational design with pristinely manicured fairways and greens, however, it is the way the Nicklaus Design team has protected the natural environment whilst creating the layout that really catches the eye. In total, one million square metres of mangroves characterize the Al Zorah Golf Club and underline that notion of embracing rather than intruding the natural layout of the land. A plethora of native sandy areas, an abundance of wildlife and 12 km of waterfront add to that sense of rich beauty and biodiversity. Vast coastal areas with a constantly-changing tidal system also present a unique challenge for players, altering the look and feel of the course on an hourly basis.</p>
+    </div>
+</div>
+<div class="contact-footer">
+    <div class="contact-text">
+        <h2>Contact Us</h2>
+        <p>If you call, we will answer you in a timely manner and your email won’t go into the abyss of an inbox never to be seen.  Al Zorah Golf Club prides itself on replying promptly and exceeding your expectations.</p>
+		<br>
+		<p>Feel free to call 00 000 0000 or send an email to Philip Henderson random@gmail.com</p>
+    </div>
+    <div class="contact-form">
+<form>
+ <label for="first-name">First Name:</label>
+ <input type="text" id="first-name" name="first-name" required>
+            
+ <label for="email">Email Address:</label>
+ <input type="email" id="email" name="email" required>
+            
+ <label for="phone">Phone Number:</label>
+ <input type="tel" id="phone" name="phone">
+            
+ <label for="message">Message:</label>
+ <textarea id="message" name="message" rows="5" required></textarea>
+            
+ <button type="submit">Submit</button>
+</form>
+    </div>
+</div>
+<div class="footer">
+    <p>&copy; 2024 Golf Club. All rights reserved.</p>
+</div>
+
+	
+	
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<style>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Baskerville, "Palatino Linotype", Palatino, "Times New Roman", serif;
+}
+
+.navigationbar {
+  height: 80px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.navigationbar a {
+  text-decoration: none;
+  color: aliceblue;
+  text-align: center;
+  padding: 16px;
+  padding-top: 30px;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+.logo {
+  width: 88px;
+  height: 80px;
+  margin-right: auto;
+}
+@media (max-width: 986px) {
+  .navigationbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    align-items: flex-start;
+  }
+  .navigationbar a {
+    padding: 10px;
+    display: block;
+    text-align: right;
+    margin-left: 0;
+  }
+  .logo {
+    width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .navigationbar a {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.contact-info {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.contact-info h2 {
+  color: #004b19;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  color: #333;
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.contact-form button {
+  background-color: #66da58;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #5bbf50;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+	.footer {
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+	border-top: #FFFFFF 1px solid;
+}
+</style>
+</head>
+<body>
+<div class="navigationbar">
+
+	  <img class="logo" src="Logo-golfresort.png" alt="logo">
+	<a href="index.html">HOME</a>
+
+	<a href="Packages.html">PACKAGES&nbsp;</a>
+	<a href="Facilities.html">FACILITIES</a>
+	<a href="Contact-us.html">CONTACT US</a>
+	<a href="aaboutus.html">ABOUT US</a>
+</div>
+
+<div class="contact-container">
+  <div class="contact-info">
+    <h2>Contact Information</h2>
+    <p><strong>Phone:</strong> +00 000 0000</p>
+    <p><strong>Email:</strong> info@golfresort.com</p>
+    <p><strong>Address:</strong> 123 Golf Resort Lane, City, Country</p>
+    <p>We’re here to answer your questions! Feel free to reach out to us, and we’ll get back to you as soon as possible.</p>
+  </div>
+
+  <div class="contact-form">
+    <h2>Send Us a Message</h2>
+<form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+	  
+	  <label for="number">Phone Number:</label>
+      <input type="number" id="number" name="Number" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+<div class="footer">
+    <p>&copy; 2024 Golf Club. All rights reserved.</p>
+</div>
+</body>
+</html>

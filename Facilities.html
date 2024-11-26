@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+<title>Facilities Offered</title>
+<style>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+.navigationbar {
+  height: 80px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.navigationbar a {
+  text-decoration: none;
+  color: aliceblue;
+  text-align: center;
+  padding: 16px;
+  padding-top: 30px;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+.logo {
+  width: 88px;
+  height: 80px;
+  margin-right: auto;
+}
+@media (max-width: 986px) {
+  .navigationbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    align-items: left;
+  }
+  .navigationbar a {
+    padding: 10px;
+    display: block;
+    text-align: right;
+    margin-left: 0;
+  }
+  .logo {
+    width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width : 477px ){
+  .navigationbar a {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+.Heading {
+  background-color: white;
+  color: #004B19;
+  padding: 15px;
+  text-align: center;
+  border-bottom: #21AF3C 2px solid;
+  font-size: 22px;
+}
+.facility {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+  padding: 40px;
+  border-radius: 8px;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+  overflow: hidden;
+  height: 200px;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 30px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+ .facility:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+}
+.facility h2 {
+  margin-bottom: 10px;
+}
+.facility p, .facility ul {
+  font-size: 16px;
+}
+.facility::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.facility > * {
+  position: relative;
+  z-index: 2;
+}
+.facility.golf-courses {
+  background-image: url("Golf-facilities-updated.jpg"); 
+}
+.facility.clubhouses {
+  background-image: url("club-house.jpg");
+}
+.facility.accommodation {
+  background-image: url("Golf-accomodation.jpg");
+}
+.facility.dining-options {
+  background-image: url("Dining-golf.jpg");
+}
+.facility.pro-shop {
+  background-image: url("proshop-golf.jpg");
+}
+.facility.other-activities {
+  background-image: url("golf-lessons.jpg");
+
+}
+	.footer {
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+	border-top: #FFFFFF 1px solid;
+}
+</style>
+</head>
+
+<body>
+<div class="navigationbar">
+	  <img class="logo" src="Logo-golfresort.png" alt="logo">
+<a href="test.html">PACKAGES&nbsp;</a>
+	<a href="index.html">HOME</a>
+
+	<a href="Packages.html">PACKAGES&nbsp;</a>
+	<a href="Facilities.html">FACILITIES</a>
+	<a href="Contact-us.html">CONTACT US</a>
+	<a href="aaboutus.html">ABOUT US</a>
+</div>
+
+<div class="Heading">
+  <h1>Facilities Offered</h1>
+</div>
+
+<div class="facility golf-courses">
+  <h2>Golf Courses</h2>
+  <p>Three championship golf courses including the famous Sea View course.</p>
+</div>
+
+<div class="facility clubhouses">
+  <h2>Clubhouses</h2>
+  <p>Two clubhouses available for relaxation and socializing.</p>
+</div>
+
+<div class="facility accommodation">
+  <h2>Accommodation</h2>
+  <p>Hotel accommodation for a comfortable stay.</p>
+</div>
+
+<div class="facility dining-options">
+  <h2>Dining Options</h2>
+  <p>Restaurants and cafés to cater to all tastes.</p>
+</div>
+
+<div class="facility pro-shop">
+  <h2>Pro Shop</h2>
+  <p>A fully stocked pro shop for all your golfing needs.</p>
+</div>
+
+<div class="facility other-activities">
+  <h2>Other Activities</h2>
+    <p>-Floodlit driving range</p>
+   <p>-Golf lessons</p>
+    <p>-Digital coaching</p>
+    <p>-Caddie service</p>
+
+</div>
+<div class="footer">
+    <p>&copy; 2024 Golf Club. All rights reserved.</p>
+</div>
+</body>
+</html>
+
